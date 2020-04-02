@@ -1,0 +1,1 @@
+"Group competitive programing" 

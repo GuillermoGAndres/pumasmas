@@ -1,0 +1,245 @@
+Microsoft Windows [Versión 10.0.18362.720]
+(c) 2019 Microsoft Corporation. Todos los derechos reservados.
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\barbullaMatematica>dir
+dir
+ El volumen de la unidad C es TI10676500E
+ El número de serie del volumen es: A587-1F80
+
+ Directorio de c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\barbullaMatematica
+
+26/03/2020  08:35 p. m.    <DIR>          .
+26/03/2020  08:35 p. m.    <DIR>          ..
+26/03/2020  08:35 p. m.               243 burbulla.cpp
+               1 archivos            243 bytes
+               2 dirs  678,444,711,936 bytes libres
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\barbullaMatematica>g++ burbulla.cpp -o code
+g++ burbulla.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\barbullaMatematica>code
+code
+5
+35
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\barbullaMatematica>cd --
+cd --
+El sistema no puede encontrar la ruta especificada.
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\barbullaMatematica>cd ..
+cd ..
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion>cd onTaFacil
+cd onTaFacil
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\onTaFacil>g++ facil.cpp -o code
+g++ facil.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\onTaFacil>code
+code
+2 3
+6
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\onTaFacil>
+
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\onTaFacil>
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\onTaFacil>
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\onTaFacil>
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\onTaFacil>cd ..
+cd ..
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion>dir
+dir
+ El volumen de la unidad C es TI10676500E
+ El número de serie del volumen es: A587-1F80
+
+ Directorio de c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion
+
+26/03/2020  08:55 p. m.    <DIR>          .
+26/03/2020  08:55 p. m.    <DIR>          ..
+26/03/2020  09:01 p. m.    <DIR>          areaFigura
+26/03/2020  08:36 p. m.    <DIR>          barbullaMatematica
+23/03/2020  06:37 p. m.    <DIR>          fizzBuzz
+23/03/2020  04:00 p. m.    <DIR>          intervalos
+24/03/2020  09:54 p. m.    <DIR>          laVisionAna
+26/03/2020  08:57 p. m.    <DIR>          onTaFacil
+23/03/2020  06:57 p. m.    <DIR>          tablaPastel
+               0 archivos              0 bytes
+               9 dirs  678,449,405,952 bytes libres
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion>cd araaFigura
+cd araaFigura
+El sistema no puede encontrar la ruta especificada.
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion>cd areaFigura
+cd areaFigura
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\areaFigura>g++ areaFigura.cpp -o code
+g++ areaFigura.cpp -o code
+areaFigura.cpp: In function 'int main()':
+areaFigura.cpp:11:13: error: 'adges' was not declared in this scope
+     area += adges;
+             ^~~~~
+areaFigura.cpp:11:13: note: suggested alternative: 'edges'
+     area += adges;
+             ^~~~~
+             edges
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\areaFigura>g++ areaFigura.cpp -o code
+g++ areaFigura.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\areaFigura>code
+code
+1
+1
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\areaFigura>code
+code
+4
+25
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\areaFigura>dir
+dir
+ El volumen de la unidad C es TI10676500E
+ El número de serie del volumen es: A587-1F80
+
+ Directorio de c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\areaFigura
+
+26/03/2020  09:03 p. m.    <DIR>          .
+26/03/2020  09:03 p. m.    <DIR>          ..
+26/03/2020  09:03 p. m.               229 areaFigura.cpp
+26/03/2020  09:01 p. m.               229 areaFigura.cpp~
+26/03/2020  09:03 p. m.            45,759 code.exe
+               3 archivos         46,217 bytes
+               2 dirs  678,446,399,488 bytes libres
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\areaFigura>cd ..
+cd ..
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion>dir
+dir
+ El volumen de la unidad C es TI10676500E
+ El número de serie del volumen es: A587-1F80
+
+ Directorio de c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion
+
+26/03/2020  08:55 p. m.    <DIR>          .
+26/03/2020  08:55 p. m.    <DIR>          ..
+26/03/2020  09:03 p. m.    <DIR>          areaFigura
+26/03/2020  08:36 p. m.    <DIR>          barbullaMatematica
+23/03/2020  06:37 p. m.    <DIR>          fizzBuzz
+23/03/2020  04:00 p. m.    <DIR>          intervalos
+26/03/2020  09:15 p. m.    <DIR>          laVisionAna
+26/03/2020  08:57 p. m.    <DIR>          onTaFacil
+23/03/2020  06:57 p. m.    <DIR>          tablaPastel
+               0 archivos              0 bytes
+               9 dirs  678,446,399,488 bytes libres
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion>cd laVisionAna
+cd laVisionAna
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\laVisionAna>idr
+idr
+"idr" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\laVisionAna>dir
+dir
+ El volumen de la unidad C es TI10676500E
+ El número de serie del volumen es: A587-1F80
+
+ Directorio de c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\laVisionAna
+
+26/03/2020  09:15 p. m.    <DIR>          .
+26/03/2020  09:15 p. m.    <DIR>          ..
+24/03/2020  09:14 p. m.            69,777 code.exe
+24/03/2020  09:54 p. m.               627 laVision.cpp
+24/03/2020  09:08 p. m.               813 laVision.cpp~
+26/03/2020  09:15 p. m.               435 laVisionV2.cpp
+               4 archivos         71,652 bytes
+               2 dirs  678,446,399,488 bytes libres
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\laVisionAna>g++ laVisionV2.cpp -o code
+g++ laVisionV2.cpp -o code
+laVisionV2.cpp: In function 'int main()':
+laVisionV2.cpp:11:10: error: 'numCases' was not declared in this scope
+   cin >> numCases;
+          ^~~~~~~~
+laVisionV2.cpp:11:10: note: suggested alternative: 'numCase'
+   cin >> numCases;
+          ^~~~~~~~
+          numCase
+laVisionV2.cpp:19:20: error: 'item' was not declared in this scope
+     for(double x : item){
+                    ^~~~
+laVisionV2.cpp:19:20: note: suggested alternative: 'itoa'
+     for(double x : item){
+                    ^~~~
+                    itoa
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\laVisionAna>g++ laVisionV2.cpp -o code
+g++ laVisionV2.cpp -o code
+laVisionV2.cpp: In function 'int main()':
+laVisionV2.cpp:11:10: error: 'numCases' was not declared in this scope
+   cin >> numCases;
+          ^~~~~~~~
+laVisionV2.cpp:11:10: note: suggested alternative: 'numCase'
+   cin >> numCases;
+          ^~~~~~~~
+          numCase
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\laVisionAna>g++ laVisionV2.cpp -o code
+g++ laVisionV2.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\laVisionAna>code
+code
+1
+15 5
+14.50 14.20 17.80 13.11 15.21
+14.5
+14.2
+17.8
+13.11
+15.21
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\laVisionAna>g++ laVisionV2.cpp -o code
+g++ laVisionV2.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\laVisionAna>code
+code
+2
+15 5
+14.50 14.20 17.80 13.11 15.21
+14.5
+14.2
+17.8
+13.11
+15.21
+Case 1: comprar en dia 4
+20 6
+8.90 8.92 10.11 9.27 8.90 9.57
+8.9
+8.92
+10.11
+9.27
+8.9
+9.57
+Case 2: comprar en dia 1
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\laVisionAna>g++ laVisionV2.cpp -o code
+g++ laVisionV2.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\laVisionAna>code
+code
+2
+15 5
+14.50 14.20 17.80 13.11 15.21
+Case 1: comprar en dia 4
+20 6
+8.90 8.92 10.11 9.27 8.90 9.57
+Case 2: comprar en dia 1
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\laVisionAna>

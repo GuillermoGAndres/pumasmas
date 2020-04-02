@@ -1,0 +1,271 @@
+Microsoft Windows [Versión 10.0.18362.720]
+(c) 2019 Microsoft Corporation. Todos los derechos reservados.
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>dir
+dir
+ El volumen de la unidad C es TI10676500E
+ El número de serie del volumen es: A587-1F80
+
+ Directorio de c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel
+
+23/03/2020  04:56 p. m.    <DIR>          .
+23/03/2020  04:56 p. m.    <DIR>          ..
+23/03/2020  04:56 p. m.               113 tablaPastel.cpp
+               1 archivos            113 bytes
+               2 dirs  678,540,627,968 bytes libres
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+tablaPastel.cpp:1:10: fatal error: iostrem: No such file or directory
+ #include <iostrem>
+          ^~~~~~~~~
+compilation terminated.
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+tablaPastel.cpp:1:10: fatal error: iostreem: No such file or directory
+ #include <iostreem>
+          ^~~~~~~~~~
+compilation terminated.
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+tablaPastel.cpp: In function 'int main()':
+tablaPastel.cpp:7:11: error: expected primary-expression before 'typeof'
+   cout << typeof(num);
+           ^~~~~~
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+tablaPastel.cpp: In function 'int main()':
+tablaPastel.cpp:7:11: error: expected primary-expression before 'typeof'
+   cout << typeof num;
+           ^~~~~~
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+tablaPastel.cpp: In function 'int main()':
+tablaPastel.cpp:8:11: error: expected primary-expression before 'typeof'
+   cout << typeof(num);
+           ^~~~~~
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+tablaPastel.cpp: In function 'int main()':
+tablaPastel.cpp:8:15: error: expected primary-expression before 'typeof'
+   print("%d", typeof(num);
+               ^~~~~~
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+tablaPastel.cpp:2:10: fatal error: math: No such file or directory
+ #include <math>
+          ^~~~~~
+compilation terminated.
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+tablaPastel.cpp: In function 'int main()':
+tablaPastel.cpp:8:11: error: expected primary-expression before 'typeof'
+   cout << typeof(short) << endl;
+           ^~~~~~
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>code
+code
+2
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>code
+code
+4
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>code
+code
+4
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>code
+code
+8
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+tablaPastel.cpp: In function 'int main()':
+tablaPastel.cpp:8:11: error: 'sqrt' was not declared in this scope
+   cout << sqrt(4)<< endl;
+           ^~~~
+tablaPastel.cpp:8:11: note: suggested alternative: 'qsort'
+   cout << sqrt(4)<< endl;
+           ^~~~
+           qsort
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>code
+code
+2
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>code
+code
+2.23607
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>code
+code
+2
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>code
+code
+2
+25
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+tablaPastel.cpp: In function 'int main()':
+tablaPastel.cpp:10:10: error: 'numCases' was not declared in this scope
+   cin >> numCases;
+          ^~~~~~~~
+tablaPastel.cpp:10:10: note: suggested alternative: 'numCase'
+   cin >> numCases;
+          ^~~~~~~~
+          numCase
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>ccode
+ccode
+"ccode" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>code
+code
+2
+25
+2
+3
+6
+5
+10
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>code
+code
+2
+sd
+0
+0
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>code
+code
+2
+5
+Area a comprar: 10
+3
+Area a comprar: 6
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>code
+code
+2
+3
+Area a comprar: 5
+5
+Area a comprar: 10
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>code
+code
+2
+3
+Area a comprar: 5
+5
+Area a comprar: 10
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>code
+code
+2
+3
+Area a comprar: 6
+5
+Area a comprar: 10
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>code
+code
+2
+Area a comprar: 8402080
+Area a comprar: 8402080
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>3
+3
+"3" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+tablaPastel.cpp: In function 'int main()':
+tablaPastel.cpp:11:21: error: expected ';' before 'cout'
+     cin >> areaTabla
+                     ^
+                     ;
+     cout << "Area a comprar: "<< areaTabla+areaTabla << endl;
+     ~~~~             
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>code
+code
+2
+3
+Area a comprar: 6
+6
+Area a comprar: 12
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>g++ tablaPastel.cpp -o code
+g++ tablaPastel.cpp -o code
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>code
+code
+2
+5
+Area a comprar: 10
+3
+Area a comprar: 6
+
+c:\Users\memoc\Documents\programacion-competitiva\pu++\PrimeraSesion\tablaPastel>
