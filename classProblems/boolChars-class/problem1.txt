@@ -1,0 +1,4 @@
+Problema:Dados dos números enteros a y b, responder sia<b,a>bya==b.Input:Se
+darán dos números enteros a, b entre 0 y 10.Output:Debes imprimir en una línea
+separada la respuesta a cadapregunta. Si el enunciado es verdadero, imprimir
+1. Si es falso,impimir 0.

@@ -1,0 +1,17 @@
+El Club de programación competitiva Pu++ toma desciones de unamanera muy
+interesante. En Discord alguien publica una idea y solose toman las primeras 3
+opinines para aprobar o rechazar lapropuesta. Para saber que ideas seran
+aprobadas llegaron a dosconclusiones:1.- Para promover que alguien vote
+primero, se le debe dar máspeso al primer voto.2.- Ninguna idea brillante es
+unánimemente aprobada.Pensando en lo anterior, se llego a una conclusión. Una
+idea seaprobará si el primero en votar la acepta, el segundo la rechaza y
+eltercero la acepta o si los dos primeros la aceptan y el tercero la rechaza.
+
+Para los miembros de Pu++ no solo es importante decir si les gusta ono la
+idea, también les importa expresar que tanto les gusta la idea.Para lograr
+mostrar ésto dan 0 si desaprueban o un número enteroentre 1 y 10 si la
+aprueban, mostrando que tanto les gusta la idea.Debes ayudar al club a saber
+si la propuesta fue aprobada.
+Input:Se darán tres números enteros a, b, c entre
+0 y 10.
+Output:Debes imprimir Aprobado o Rechazado según las normasdel club.

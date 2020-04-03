@@ -1,0 +1,5 @@
+Recorrer solo la primera mitad de un arreglo
+correr solo la segunda mitad de un arreglo
+correr un arreglo en sentido contrario
+correr solo los indices pares de un arreglo
+combinaciones de los anteriores

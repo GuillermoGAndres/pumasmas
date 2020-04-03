@@ -1,0 +1,20 @@
+Problema:Dados dos letras minúsculas a y b, dar la distancia en laque se
+encuentrar en el alfabeto (sin incluir ñ o ll).
+Input:Se darán dos letras
+minúsculas a, b entre a y z.
+Output:Debes imprimir la distancia a la que se
+encuentran las dosletras en el alafabeto anglosajón.
+
+SOLUCION
+a b c d e f g h i 
+1 2 3 4 5 6 7 8 9
+a i = 9-1 = 8
+REPRESENTACION ASCII
+97 98 99 100 101 102 103 104 105
+a  b  c  d  e   f    g   h   i
+a i = 105 - 97 = 8 = | 97 - 105 1|= |-8|
+105
+-97
+---
+  8
+z a = 97 - 130 = |-32| = 32

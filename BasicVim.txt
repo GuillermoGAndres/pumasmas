@@ -1,0 +1,43 @@
+/*
+ * Manual de usar vim 
+ * control-p hace el autocompletado
+ * v change in mode visual
+ * d cut select (delete to cut)
+ * y copy select (yank)
+ * p (paste)
+ * u undo regresar es como el control-z
+ * Ctrl-r rendo - deshacer is like control y
+ * set number - coloca el numero de linea
+ * set expandtab - cambia todas las tabulaciones por espacios
+ * set shiftwidth=4 - ajusta el tab en cada bloque
+ * set tabstop=4 - Ajusta todo el documento con el tab
+ * set softtabstop=4 -No ajusta todo el documento, solamente inicia cuando lo ajustas y ahi
+ * empieza.
+ * Configutations chida is:
+ * set tabstop=4
+ * set shiftwidth=4
+ * set number
+ * ****************************
+ * :open file_path //abrir un archivo
+ * :ls # ves los buffers
+ * :term #Para abrir una terminal
+ * :vertical :term will #vertically split with the terminal in the left window. 
+ * :vertical :botright :term #will vertically split with the terminal in the right window.
+ * :! somecommand #ejecuta un comando
+ * Ctrl+w + v or :vplit //Slipt vertical 
+ * Ctrol+w + h #Mover a la derecha
+ * Ctrol+w + l #Mover a la izquierda
+ * Ctrol+w + s or split #Screenshot below
+ * Ctrol+w + o #Cierra todas ventanas
+ * Ctrol+w + (j or k) #Mover arriba y abajo
+ * Ctrol+w + (< or >) #Para estirar la ventana left and right
+ * Ctrol+w + (+ or -) #Para estirar la ventana up and down
+ *****************************************
+ *TAB-PAGES
+ *tabnew name.txt #Crea una pestaña
+ *gt   #Teclas g y t , te mueves entre pestañas
+ *gT	#te mueves hacia atras
+ *tabedit nameFile.cpp	#Nombre para editar 
+ *ctrol+w + c cierras tabs
+ *vim -p tab1.txt tab2.cpp
+ */
