@@ -1,0 +1,317 @@
+\documentclass[10pt]{beamer}
+\usepackage[utf8x]{inputenc}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{graphicx}
+\usepackage[english,ngerman]{babel}
+\usepackage{hyperref}
+
+% ------------------------------------------------------------------------------
+% Use the beautiful metropolis beamer template
+% ------------------------------------------------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage{FiraSans} 
+\mode<presentation>
+{
+  \usetheme[progressbar=foot,numbering=fraction,background=light]{metropolis} 
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{default}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+  %\setbeamertemplate{frame footer}{My custom footer}
+} 
+
+% ------------------------------------------------------------------------------
+% beamer doesn't have texttt defined, but I usually want it anyway
+% ------------------------------------------------------------------------------
+%% \let\textttorig\texttt
+%% \renewcommand<>{\texttt}[1]{%
+%%   \only#2{\textttorig{#1}}%
+%% }
+
+% ------------------------------------------------------------------------------
+% minted
+% ------------------------------------------------------------------------------
+\usepackage{minted}
+
+\usepackage{etoolbox}
+
+
+% ------------------------------------------------------------------------------
+% tcolorbox / tcblisting
+% ------------------------------------------------------------------------------
+\usepackage{xcolor}
+\definecolor{codecolor}{HTML}{FFC300}
+
+\usepackage{tcolorbox}
+\tcbuselibrary{most,listingsutf8,minted}
+
+\tcbset{tcbox width=auto,left=1mm,top=1mm,bottom=1mm,
+right=1mm,boxsep=1mm,middle=1pt}
+
+\newtcblisting{myr}[1]{colback=codecolor!5,colframe=codecolor!80!black,listing only, 
+minted options={numbers=left, style=tcblatex,fontsize=\tiny,breaklines,autogobble,linenos,numbersep=3mm},
+left=5mm,enhanced,
+title=#1, fonttitle=\bfseries,
+listing engine=minted,minted language=r}
+
+
+% ------------------------------------------------------------------------------
+% Listings
+% ------------------------------------------------------------------------------
+\definecolor{mygreen}{HTML}{37980D}
+\definecolor{myblue}{HTML}{0D089F}
+\definecolor{myred}{HTML}{98290D}
+
+\usepackage{listings}
+
+% the following is optional to configure custom highlighting
+\lstdefinelanguage{XML}
+{
+  morestring=[b]",
+  morecomment=[s]{<!--}{-->},
+  morestring=[s]{>}{<},
+  morekeywords={ref,xmlns,version,type,canonicalRef,metr,real,target}% list your attributes here
+}
+
+\lstdefinestyle{myxml}{
+language=XML,
+showspaces=false,
+showtabs=false,
+basicstyle=\ttfamily,
+columns=fullflexible,
+breaklines=true,
+showstringspaces=false,
+breakatwhitespace=true,
+escapeinside={(*@}{@*)},
+basicstyle=\color{mygreen}\ttfamily,%\footnotesize,
+stringstyle=\color{myred},
+commentstyle=\color{myblue}\upshape,
+keywordstyle=\color{myblue}\bfseries,
+}
+
+
+% ------------------------------------------------------------------------------
+% The Document
+% ------------------------------------------------------------------------------
+\title{Vectores en C++}
+\author{Club de Programacion Competitiva Pu++}
+\date{Abril del 2020}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}[fragile,allowframebreaks]{}
+  Los \textbf{vectores} en c++ son arreglos de \textbf{tamaño dinámico}.
+  
+  Funcionan de manera muy parecida a los arreglos, tenemos acceso a alguno de sus elementos en tiempo constante (es decir la 'velocidad' de acceso no depende del numero de elementos en el vector) y también podemos tener vectores de distintos tipos de dato cono int, char, string, etc.
+
+  \framebreak
+
+  \textbf{¿Dinámico?}
+  
+  Así es, no te tienes que preocupar por el tamaño de tu arreglo (vector mejor dicho), c++ se ocupa de eso.
+  Para saber el tamaño de un vector ocupanos \textit{size()}.
+  
+    \begin{minted}{c}
+        vector<char> v;  // definiendo el vector v
+        v.push_back('n');  // insertando al final
+        v.push_back('o');  // insertando al final
+        v.push_back('b');  // insertando al final
+        
+        cout << v.size() << endl;  // 3
+  \end{minted}
+
+  \begin{center}
+    \begin{tabular}{ |c|c|c| } 
+      \hline
+      n & o & b  \\
+      \hline
+    \end{tabular}
+  \end{center}
+
+
+  \framebreak
+
+    Igual que en los arreglos, accedemos a los elementos de acuerdo a su \textbf{índice}. Comenzando por el cero por supuesto.
+    
+    \begin{minted}{c}
+        vector<char> v = {'b', 'o', 'c', 'a',
+            'j', 'u', 'n', 'i', 'o', 'r', 's'};
+        
+        cout << v[0] << endl; // b
+        cout << v[2] << endl; // c
+        cout << v[0] << v[1] << v[3] << endl // boa
+
+  \end{minted}
+
+  \framebreak
+
+    \textbf{¿Podemos cambiar un elemento?}
+    
+    Claro. Continuando con nuestro ejemplo anterior:
+    \begin{minted}{c}
+    
+        v[2] = 'l';
+        
+        for (int i=0; i<v.size(); i++) {  // notar v.size()
+            cout << v[i];
+        }
+        cout << endl;
+        
+        // se imprime:
+        // bolajuniors
+    \end{minted}
+
+  \framebreak
+
+  \textbf{Uff, joya pero ¿se puede quitar un elemento?}
+    
+    Sí. Claro quitemos el \textbf{último} elemento.
+    \begin{minted}{c}
+        // quitando el elemento con indice n - 1
+        v.pop_back();
+        
+        for (int i=0; i<v.size(); i++) {
+            cout << v[i];
+        }
+        cout << endl;
+        
+        // se imprime:
+        // bolajunior
+    \end{minted}
+    Esa función solo quita el ultimo elemento, si se desea quitar un elemento distinto a este, se ocupa \textit{erase} pero eso no se necesitará por ahora.
+  \framebreak
+
+  \textbf{¿Vectores de vectores?}
+  
+  En efecto, se pueden declarar matrices con vectores.
+      \begin{minted}{c}
+        // definiendo el tamaño desde su creación
+        // un vector de vectores de tamaño 2
+        // eso no define el tamaño de sus vectores 'hijo'
+        vector<vector<int>> mat(2);
+        for (int i=0; i<2; i++) {
+            mat[i].push_back(8+i);
+            mat[i].push_back(3+i);
+        }
+    \end{minted}
+    
+    La matriz queda:
+    \begin{center}
+    \begin{tabular}{ |c|c| }
+      \hline
+        8 & 3 \\
+      \hline
+        9 & 4 \\
+      \hline
+    \end{tabular}
+  \end{center}
+
+  \framebreak
+    \textbf{Arreglo de vectores}
+    
+    Muy útiles.
+    
+    \begin{minted}{c}
+        const int MAXN = 1e3;  // definiendo una constante
+        // arreglo de vectores de int
+        vector<int> g[MXN];  // foreshadowing de gráficas
+        
+        // agregandole un 20 al vector en la posición 2
+        g[2].push_back(20);
+        
+        cout << g[2].back() << endl; // 20
+    \end{minted}
+    
+    La función \textit{back()} regresa el valor del ultimo elemento en el vector.
+  \framebreak
+  
+  \textbf{¿V-vectores de arreglos?}
+  
+  Jaja sí owo... \textbf{Pero pasemos a otra cosa.} Sobrevivirás sin vectores de arreglos.
+  
+      \begin{figure}
+          \centering
+          \includegraphics[width=120px]{a.jpg}
+      \end{figure}
+  
+  \framebreak
+
+  \textbf{Valor default}
+  
+  El valor default de un vector de enteros es cero no importando dónde se defina.
+  Si se desea llenar de un valor distinto se puede:
+  
+    \begin{minted}{c}
+        vector<int> v(3);
+    \end{minted}
+        
+    \begin{center}
+    \begin{tabular}{ |c|c|c| } 
+      \hline
+      0 & 0 & 0  \\
+      \hline
+    \end{tabular}
+  \end{center}
+    
+    \begin{minted}{c}
+        // Inicializando al vector con 1's
+        vector<int> v(3, 1);
+    \end{minted}
+    
+    \begin{center}
+    \begin{tabular}{ |c|c|c| } 
+      \hline
+      1 & 1 & 1  \\
+      \hline
+    \end{tabular}
+  \end{center}
+  
+  \framebreak
+  \textbf{Ordenando}
+      \begin{minted}{c}
+        vector<int> v = {3, 9, 0};
+        sort(v.begin(), v.end());
+    \end{minted}
+    
+    \begin{center}
+    \begin{tabular}{ |c|c|c| } 
+      \hline
+      0 & 3 & 9  \\
+      \hline
+    \end{tabular}
+  \end{center}
+    No te apures por \textit{begin()} ni por \textit{end()}, solo recuerda que eso necesitas para referenciar \textbf{todo} el vector en alguna función que te pida un rango.
+  
+  \framebreak
+  
+  \textbf{Limpiando}
+  
+  A veces necesitamos limpiar el contenido de un vector para volver a llenarlo, como cuando un problema tiene muchos casos independientes. 
+      \begin{minted}{c}
+        vector<int> v;
+        for (int t=1; t<=T; t++) {
+            // usamos el vector
+            // ...
+            
+            // lo limpiamos
+            v.clear();
+        }
+    \end{minted}
+    
+    Toma en cuenta que el tamaño del vector regresa a ser cero.
+
+  \framebreak
+  
+  \textbf{Más a fondo}
+  
+  Documentación de \textit{vector}: \url{https://en.cppreference.com/w/cpp/container/vector}
+ 
+\end{frame}
+
+
+\end{document}
+

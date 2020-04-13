@@ -6,7 +6,7 @@
  * y copy select (yank)
  * p (paste)
  * u undo regresar es como el control-z
- * Ctrl-r rendo - deshacer is like control y
+ * Ctrl-r rendo - deshacer is like control-y
  * set number - coloca el numero de linea
  * set expandtab - cambia todas las tabulaciones por espacios
  * set shiftwidth=4 - ajusta el tab en cada bloque
