@@ -19,6 +19,7 @@
  * set number
  * ****************************
  * :open file_path //abrir un archivo
+ * buffer num #numero del buffer para cambiar
  * :ls # ves los buffers
  * :term #Para abrir una terminal
  * :vertical :term will #vertically split with the terminal in the left window. 
@@ -29,6 +30,7 @@
  * Ctrol+w + l #Mover a la izquierda
  * Ctrol+w + s or split #Screenshot below
  * Ctrol+w + o #Cierra todas ventanas
+ * Ctrol+w + c #Cierra una ventana actual
  * Ctrol+w + (j or k) #Mover arriba y abajo
  * Ctrol+w + (< or >) #Para estirar la ventana left and right
  * Ctrol+w + (+ or -) #Para estirar la ventana up and down
@@ -40,4 +42,31 @@
  *tabedit nameFile.cpp	#Nombre para editar 
  *ctrol+w + c cierras tabs
  *vim -p tab1.txt tab2.cpp
+ **********************************
+ *En el archivo de configuracion _vimrc 
+ *Agregar esto para que automaticamente se ajuste
+ set tabstop=4
+ set shiftwidth=4
+ set number
+ colorscheme desert
+ ###Shortcut COMPILAR EN C
+ map <F8> :w <CR> :!gcc % && ./a.out <CR>
+ map <F9> :!cls <CR> :!a <CR>
+ ####Shortcut for compile c++
+map <F8> :w <CR> :!cls <CR> :!g++ % && ./a.out <CR>
+map <F9> :!cls <CR> :!a <CR>
+---------------------MEJORADO---------
+map <F8> :w <CR> :!cls <CR> :!g++ % <CR>
+map <F9> :!cls <CR> :!a <CR>
+-------------------------------------
+##Seria guardar el ejecutable con el mismo nombre
+map <F8> :w <CR> :!cls <CR> :!g++ % -o %< && ./%< <CR>
+map <F9> :!cls <CR> :! %< && ./%< <CR>			# con esto elimna el .cpp y deja solo el nombre: %< && ./%<
+------------------MEJORADO---------------------
+map <F8> :w <CR> :!cls <CR> :!g++ % -o %< <CR> #COMPILA
+map <F9> :!cls <CR> :! %< <CR> #EJECUTA
+-------------------------------
+Con este comando compilas y ejecutas
+map <F8> :w <CR> :!cls <CR> :!g++ % -o %< && %< <CR>
+-----------------------------------------------
  */
