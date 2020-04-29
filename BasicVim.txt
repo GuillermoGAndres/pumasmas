@@ -69,4 +69,8 @@ map <F9> :!cls <CR> :! %< <CR> #EJECUTA
 Con este comando compilas y ejecutas
 map <F8> :w <CR> :!cls <CR> :!g++ % -o %< && %< <CR>
 -----------------------------------------------
- */
+Explorador de Archivos 
+explore
+Lexplore //Abre el explorado a los lados
+Heplorer //Abre el navegador en horizontal
+*/
